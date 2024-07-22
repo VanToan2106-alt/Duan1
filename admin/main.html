@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/admin/main/style.css" />
+  <!-- FONT AWSOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  
+  <div class="container-plus">
+    <div class="main">
+      <div class="side-bar">
+        <div class="header-sideBar">
+          <img src="../image/home/logo_fixed.png" width="150px" alt="" />
+        </div>
+        <div class="text-control">
+          <i class="fa-solid fa-wrench"></i>
+          <p>Danh mục quản lý</p>
+        </div>
+        <div class="content-sideBar">
+          <ul class="sideBar-list">
+            <li>
+              <i class="fa-sharp fa-solid fa-file-invoice-dollar icon_side"></i>
+              <a href="">Đơn hàng</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-list icon_side"></i>
+              <a href="">Loại hàng</a>
+            </li>
+            <li>
+              <i class="fa-sharp fa-solid fa-box icon_side"></i>
+              <a href="">Sản phẩm</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-users icon_side"></i>
+              <a href="">Khách hàng</a>
+            </li>
+            <li>
+              <i class="fa-sharp fa-solid fa-comments icon_side"></i>
+              <a href="">Bình luận</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-square-poll-vertical icon_side"></i>
+              <a href="">Thống kê</a>
+            </li>
+          </ul>
+        </div>
+        <div class="log-out">
+          <p>
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <a href="">Log Out</a>
+          </p>
+        </div>
+      </div>
+      <div class="information-system">
+        <div class="menu-info">
+          <div class="dasboard">
+            <p>
+              <i class="fa-sharp fa-solid fa-bars"></i>
+            <p>Dashboard</p>
+            </p>
+          </div>
+          <div class="admin">
+            <div class="admin-info">
+              <img src="https://qph.cf2.quoracdn.net/main-qimg-ae9a489a8a257fe1cc8d38c693389ab1-lq" alt="">
+              <p class="text-admin">Admin</p>
+            </div>
+
+            <div class="text-online">
+              <p>Online</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="statiscal">
+          <div class="box">
+            <div class="box-info">
+              <p class="text-number">67</p>
+              <p>Khách hàng</p>
+            </div>
+            <div class="box-img">
+              <i class="fa-solid fa-users"></i>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-info">
+              <p class="text-number">67</p>
+              <p>Đơn hàng</p>
+            </div>
+            <div class="box-img">
+              <i class="fa-solid fa-list"></i>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-info">
+              <p class="text-number">67</p>
+              <p>Loại hàng</p>
+            </div>
+            <div class="box-img">
+              <i class="fa-solid fa-users"></i>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-info">
+              <p class="text-number">67</p>
+              <p>Sản phẩm</p>
+            </div>
+            <div class="box-img">
+              <i class="fa-sharp fa-solid fa-box"></i>
+            </div>
+          </div>
+        </div>
+        <div class="top-selling">
+          <p class="text-selling">Top Selling Products</p>
+          <table id="customers">
+            <tr>
+              <th>STT</th>
+              <th>Loại sản phẩm</th>
+              <th>Sản phẩm</th>
+              <th>Lượng mua</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Laptop</td>
+              <td>Macbook Air</td>
+              <td>850</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Điện thoại</td>
+              <td>Galaxy zFold 4</td>
+              <td>700</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Tablet</td>
+              <td>Ipad Air 5</td>
+              <td>530</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Laptop</td>
+              <td>Acer Nitro 5</td>
+              <td>310</td>
+            </tr>
+
+
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  window.addEventListener("load", function (e) {
+    const lis = document.querySelectorAll("li");
+    lis.forEach((item) => {
+      const icon = item.querySelector(".icon_side");
+      item.addEventListener("mouseenter", function (e) {
+        icon.style.transition = "0.5s";
+        icon.style.transform = "scale(2)";
+      });
+      item.addEventListener("mouseleave", function (e) {
+        icon.style = "";
+      });
+     
+    });
+    
+  });
+</script>
+
+</html>

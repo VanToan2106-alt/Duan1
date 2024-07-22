@@ -1,0 +1,218 @@
+:root {
+  --color_main: #4d1ab8;
+  --color_second: #9d86ff;
+  --color_dark: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin: auto;
+}
+
+.box-logIn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* background-color: black; */
+}
+
+.log-inForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text_welcome {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.topText {
+  margin-top: 20px;
+}
+
+.please_enter {
+  margin-top: 15px;
+  color: #939192;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* padding: 10 15px; */
+}
+input {
+  padding: 15 20px;
+  border-radius: 20px;
+  border: 2px solid #939192;
+}
+
+input:focus-visible {
+  outline: none;
+}
+.email {
+  position: relative;
+}
+
+.input-mail {
+  width: 100%;
+}
+
+.mail_icon {
+  position: absolute;
+  top: 20;
+  margin-right: 20;
+  color: #939192;
+}
+.icon_wrapMail {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.password {
+  position: relative;
+}
+input[type="password"] {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.pass_icon {
+  position: absolute;
+  top: 35;
+  margin-right: 20;
+  color: #939192;
+}
+
+.icon_wrapPass {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.warning-pass {
+  margin-top: 20px;
+  color: red;
+  display: none;
+}
+.support-logIn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remember_Text {
+  margin-left: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.forgot a {
+  color: #939192;
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  color: black;
+}
+
+.button-logIn {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: var(--color_main);
+  width: 100%;
+  padding: 20px 15px;
+  border-radius: 20px;
+}
+
+.button-logIn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-logIn:hover {
+  transition: 0.8s;
+  background-color: var(--color_second);
+}
+
+.click-signUp {
+  text-align: center;
+  font-family: "roboto", sans-serif;
+}
+
+.click-signUp a {
+  text-decoration: none;
+  color: #4d1ab8;
+  font-weight: bold;
+  font-weight: bold;
+}
+
+.click-signUp a:hover {
+  text-decoration: underline;
+}
+
+/* .template {
+  width: 1000px;
+  height: 745px;
+} */
+
+@media (max-width: 800px) {
+  .logo {
+    margin-top: -50px;
+  }
+  .please_enter {
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .email {
+    width: 90%;
+  }
+
+  .password {
+    width: 90%;
+  }
+
+  .support-logIn {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .button-logIn {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .click-signUp {
+    margin-top: 20px;
+  }
+
+  .warning-pass {
+    text-align: center;
+  }
+}

@@ -1,0 +1,100 @@
+.tittle_staffs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #596ad2;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.tittle_staffs h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.tittle_staffs i {
+  font-size: 30px;
+  color: white;
+  margin-left: 30px;
+}
+
+table {
+  margin-top: 50px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  color: white;
+  display: block;
+  max-height: 500px;
+  overflow-y: scroll;
+  font-size: 20px;
+}
+
+tr {
+  border-bottom: 1px solid white;
+}
+
+table thead tr,
+table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+label {
+  font-weight: bold;
+  color: white;
+}
+
+form div {
+  padding: 10px 15px;
+  /* width: 100%; */
+}
+
+input {
+  background-color: white;
+  border: white;
+  padding: 10px 15px;
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.check-input {
+  width: 1%;
+  height: 20px;
+}
+
+.form-role {
+  display: flex;
+  align-items: center;
+}
+
+.form-role label {
+  margin-left: 10px;
+}
+
+.label-staff {
+  color: #d0aa61;
+}
+
+.label-admin {
+  color: red;
+}

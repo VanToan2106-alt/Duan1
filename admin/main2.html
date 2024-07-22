@@ -1,0 +1,125 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/admin/main/style.css" />
+    <link rel="stylesheet" href="../css/admin/acount.css" />
+    <!-- FONT AWSOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <div class="container-plus">
+      <div class="main">
+        <div class="side-bar">
+          <div class="header-sideBar">
+            <img src="../images/home/logo_fixed.png" width="150px" alt="" />
+          </div>
+          <div class="text-control">
+            <i class="fa-solid fa-wrench"></i>
+            <p>Danh mục quản lý</p>
+          </div>
+          <div class="content-sideBar">
+            <ul class="sideBar-list">
+              <li>
+                <i
+                  class="fa-sharp fa-solid fa-file-invoice-dollar icon_side"></i>
+                <a href="">Đơn hàng</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-list icon_side"></i>
+                <a href="">Loại hàng</a>
+              </li>
+              <li>
+                <i class="fa-sharp fa-solid fa-box icon_side"></i>
+                <a href="">Sản phẩm</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-users icon_side"></i>
+                <a href="">Khách hàng</a>
+              </li>
+              <li>
+                <i class="fa-sharp fa-solid fa-comments icon_side"></i>
+                <a href="">Bình luận</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-square-poll-vertical icon_side"></i>
+                <a href="">Thống kê</a>
+              </li>
+            </ul>
+          </div>
+          <div class="log-out">
+            <p>
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <a href="">Log Out</a>
+            </p>
+          </div>
+        </div>
+        <div class="information-system">
+          <div class="tittle_listUsers">
+            <h3>Thông tin tài khoản của OCTOTECH</h3>
+            <i class="fa-sharp fa-solid fa-circle-info"></i>
+          </div>
+          <div class="main_listUsers">
+            <a href="">
+              <div class="box_listUser">
+                <div class="text_boxlistUser">
+                  <p>Tài khoản người dùng</p>
+                  <p>Số lượng: <strong>67</strong></p>
+                </div>
+                <div class="img_boxlistUser">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="box_listUser">
+                <div class="text_boxlistUser">
+                  <p>Tài khoản nhân viên</p>
+                  <p>Số lượng: <strong>67</strong></p>
+                </div>
+                <div class="img_boxlistUser">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="box_listUser">
+                <div class="text_boxlistUser">
+                  <p>Tài khoản quản trị viên</p>
+                  <p>Số lượng: <strong>67</strong></p>
+                </div>
+                <div class="img_boxlistUser">
+                  <i class="fa-sharp fa-solid fa-user-secret"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.addEventListener("load", function (e) {
+      const lis = document.querySelectorAll("li");
+      lis.forEach((item) => {
+        const icon = item.querySelector(".icon_side");
+        item.addEventListener("mouseenter", function (e) {
+          icon.style.transition = "0.5s";
+          icon.style.transform = "scale(2)";
+        });
+        item.addEventListener("mouseleave", function (e) {
+          icon.style = "";
+        });
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+body {
+  color: white;
+}
+:root {
+  --color_main: #4d1ab8;
+  --color_second: #9d86ff;
+  --color_dark: black;
+}
+
+hr {
+  margin: 0;
+  width: 50%;
+}
+.side-bar {
+  width: 17%;
+  height: 100%;
+  background-color: #3c486b;
+  padding: 15px 15px;
+}
+
+.User_changeImg {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-left: 30px;
+}
+
+.img-user {
+  border-radius: 50%;
+}
+
+.User_changeImg input {
+  background-color: white;
+  padding: 5px 15px;
+  color: black;
+  font-weight: bold;
+  border: 1px solid #333;
+  border: none;
+}
+
+.secondSide_content {
+  margin-top: 30px;
+  padding: 15px 15px;
+}
+.secondSide_content h5 {
+  color: #f9d949;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.choose_infoUser {
+  display: flex;
+  flex-direction: column;
+}
+.choose_infoUser a {
+  padding: 20px 10px;
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+}
+
+.choose_infoUser a:hover {
+  background-color: white;
+  color: black;
+  padding: 20px 10px;
+  transition: 0.5s;
+}
+.topSide_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.User_changeImg {
+  margin-left: -5px;
+}
+
+.change-information {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.text_changePass {
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+.form_update {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  /* margin: 0 auto; */
+  justify-content: center;
+}
+
+.form_update div {
+  width: 80%;
+  padding: 15px 0px;
+  margin: 0 auto;
+}
+
+label {
+  color: black;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.form_update input {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  /* border: none; */
+}
+
+.button_update button {
+  background-color: #7e55fd;
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+.button_update a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  /* font-weight: bold; */
+}
+
+.button_update button:hover {
+  transition: 0.5s;
+  filter: brightness(1.1);
+}

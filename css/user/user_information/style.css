@@ -1,0 +1,40 @@
+.rank_user label {
+  background-color: #fff06a;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+strong {
+  color: #f45050;
+}
+
+.form_update input {
+  /* border: 1px solid #999999; */
+  /* background-color: #cccccc; */
+}
+
+.list_customer {
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 400px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.box_customer {
+  width: 45%;
+  margin: 20px 0px;
+  padding: 20px 30px;
+  height: 180px;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  border-radius: 20px;
+}
+
+.box_customer p {
+  color: black;
+  word-wrap: break-word;
+}

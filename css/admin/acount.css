@@ -1,0 +1,52 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+.tittle_listUsers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #596ad2;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 20px;
+}
+.tittle_listUsers h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.tittle_listUsers i {
+  font-size: 30px;
+  color: white;
+}
+.main_listUsers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.box_listUser {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 20px;
+}
+
+.box_listUser p {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+strong {
+  color: red;
+}
+.img_boxlistUser i {
+  margin-left: 50px;
+  font-size: 40px;
+  color: #596ad2;
+}
